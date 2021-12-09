@@ -61,7 +61,7 @@ const inRadius = (x, y, tx, ty, r) => {
 //setInterval(() => console.log(parts[0].
 
 const init = () => {
-  clear();
+  // clear();
   parts.forEach((el, i) => {
     el.draw(); 
     if(inRadius(el.x, el.y, mouse_x, mouse_y, 100) && !el.moves.toText) { 
