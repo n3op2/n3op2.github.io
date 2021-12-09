@@ -16,7 +16,7 @@ let testB = true;
 const rect = c.getBoundingClientRect();
 
 const createParts = (x, y, str) => {
-  ctx.font = 'bold 120px arial';
+  ctx.font = 'bold 20px arial';
   ctx.textAlign = 'center';
   ctx.fillText(str, x, y);
 
@@ -84,5 +84,11 @@ const init = () => {
   window.requestAnimationFrame(init);   
 }
 
-createParts(800, 500, 'STALO ZAIDIMAI!');
 
+createParts(screen.width/2, 100, 'Kvietimas!');
+createParts(screen.width/2, 300, 'Noreciau jus pakviesti si sekamdieni 12th December');
+createParts(screen.width/2, 330, 'I jaksto g 6a (kastonu g 6) ar tai po misiu ar tai po pietu, o gal ir vakarienes!');
+createParts(screen.width/2, 360, 'Svarbu yra, kad tu ateitum!');
+createParts(screen.width/2, 390, 'Bus maisto, zmoniu, linksmybiu ir stalo zaidimu:)');
+createParts(screen.width/2, 420, 'Ateik ateik!');
+createParts(screen.width/2, 450, 'P.S paspausk ta mygtuka!');

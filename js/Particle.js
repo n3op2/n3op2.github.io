@@ -27,7 +27,7 @@ class Particle {
     this.x = x, this.y = y;
     this.vel = 1, this.velMax = 10;
     this.ctx = ctx
-    this.r = getRnd(7, 1);
+    this.r = getRnd(4, 1);
     this.f_default = 1.00473;
     this.f = this.f_default;
     this.a = 0;
@@ -44,9 +44,9 @@ class Particle {
       ctx.fillStyle = 'rgb(' + this.col.join(',') + ')';
       ctx.shadowColor = 'black';
 			// Shadows are very effective but expensive too
-      //ctx.shadowBlur = '4';
-      //ctx.shadowOffsetX = this.radius;
-      //ctx.shadowOffsetY = this.radius;
+      ctx.shadowBlur = '3';
+      ctx.shadowOffsetX = this.radius;
+      ctx.shadowOffsetY = this.radius;
       ctx.fill();
     }
 
